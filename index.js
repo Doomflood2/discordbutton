@@ -73,7 +73,7 @@ app.get("/setrank", async (req, res)=> {
 
     Channel.send(MakeButton(await noblox.getUsernameFromId(UserID)))
 
-    user= UserID
+    user = UserID
     rank = RankId
 
     res.status(200).send("Sent to discord.")
@@ -83,7 +83,7 @@ client.on(Events.InteractionCreate, async interaction => {
     if (interaction.isButton()) {
       if (interaction.customId == "Accept") {
         interaction.update({ content: `**${interaction.user.tag}** Ranked **${await noblox.getUsernameFromId(user)}**` ,components: [DeadButton] });
-        await noblox.setRank(Config.groupid, user, rank)
+        await noblox.setRank(Config.groupid, user, Number(rank))
     }
 
     if (interaction.customId == "Decline") {
