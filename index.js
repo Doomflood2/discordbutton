@@ -94,6 +94,6 @@ client.on(Events.InteractionCreate, async interaction => {
 
 client.login(Config.token)
 
-app.listen(Config.port, () => {
-    console.log(`Online | https://localhost:${Config.port}`)
+app.listen(PORT, () => {
+    console.log(`Online | https://localhost:${PORT}`)
 })
