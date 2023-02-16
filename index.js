@@ -18,7 +18,7 @@ const PORT = process.env.PORT || Config.port
 async function Login(){
     await noblox.setCookie(Config.cookie);
 }
-//Login()
+Login()
 
 function MakeButton(User){
     const NewButton = new ActionRowBuilder()
