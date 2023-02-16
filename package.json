@@ -1,0 +1,17 @@
+{
+  "name": "yrds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dfgdf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord-buttons": "^4.0.0-deprecated",
+    "discord.js": "^14.7.1",
+    "express": "^4.18.2",
+    "noblox.js": "^4.13.1"
+  }
+}
