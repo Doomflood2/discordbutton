@@ -1,8 +1,9 @@
 {
     "token": "",
     "auth-key": "auth",
-    "groupid": "",
+    "groupid": "4503064",
     "cookie": "",
     "port": 4000,
-    "channelId": ""
+    "channelId": "",
+    "channel2": ""
 }
