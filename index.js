@@ -28,7 +28,7 @@ const PORT = process.env.PORT || Config.port
 async function Login() {
     await noblox.setCookie(Config.cookie);
 }
-Login()
+//Login()
 
 async function MakeButton(UserID, Username, roleID, roleName) {
     const NewButton = new ActionRowBuilder()
@@ -125,7 +125,7 @@ client.on(Events.InteractionCreate, async interaction => {
                     text: "ABA | Web Development Team"
                 })
 
-            const channel2 = client.channels.cache.get(config.channel2)
+            const channel2 = client.channels.cache.get(Config.channel2)
             channel2.send({
                 embeds: [AcceptedEmbed]
             });
